@@ -1,13 +1,10 @@
-import { MaterialIcons } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 
-type IconName = 'home' | 'list' | 'chat' | 'person';
-
-export function TabBarIcon({ 
-  name, 
-  color 
-}: { 
-  name: IconName; 
+type Props = {
+  name: React.ComponentProps<typeof FontAwesome>['name'];
   color: string;
-}) {
-  return <MaterialIcons size={28} name={name} color={color} />;
+};
+
+export function TabBarIcon({ name, color }: Props) {
+  return <FontAwesome size={28} name={name} color={color} />;
 } 
