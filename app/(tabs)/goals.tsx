@@ -2,11 +2,11 @@ import { StyleSheet } from 'react-native';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 
-export default function DashboardScreen() {
+export default function GoalsScreen() {
   return (
     <ThemedView style={styles.container}>
-      <ThemedText type="title">Dashboard</ThemedText>
-      <ThemedText>Welcome to your Accountability Coach!</ThemedText>
+      <ThemedText type="title">Goals</ThemedText>
+      <ThemedText>Track your progress here</ThemedText>
     </ThemedView>
   );
 }
@@ -17,4 +17,4 @@ const styles = StyleSheet.create({
     padding: 20,
     gap: 16,
   },
-});
+}); 
